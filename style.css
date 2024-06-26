@@ -23,6 +23,10 @@
         padding: 1em 4em;
         justify-content: space-between;
         align-items: center;
+
+        img{
+            width: 10%;
+        }
     }
 
     .right-links{
@@ -100,7 +104,6 @@
 
         div{
             width: 250px;
-            height: 250px;
             text-align: center;
             border-radius: 8px;
 
@@ -140,9 +143,8 @@
     border-radius: 8px;
     justify-content: space-between;
     gap: 2em;
-    flex-basis: 5em;
     flex-shrink: 0.5;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     button{
         width: fit-content;
@@ -152,10 +154,17 @@
         background-color: #3882f6;
         color: inherit;
         cursor: pointer;
+        flex-basis: content;
+        flex-shrink: 0;
     }
+    div{
+        display:flex;
+        flex-direction: column;
 
-    p{
-        margin-top  : 0.3em;
+        p{
+            margin-top  : 0.3em;
+            flex-basis: 2em;
+        }
     }
 }
 
